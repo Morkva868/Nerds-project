@@ -1,0 +1,63 @@
+
+.header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.header {
+    background-color: #eee;
+    padding-top: 49px;
+}
+
+.header__cart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__cart::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z' fill='%23A6A6A6' /%3E%3Cpath d='M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z' fill='%23A6A6A6' /%3E%3Cpath d='M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z' fill='%23A6A6A6' /%3E%3C/svg%3E");
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 187%;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.header__link:hover {
+    color: #fb565a;
+}
+
+.header__link:active {
+    color: #00000030;
+}
+
+.header__logo {
+    transition: 300ms;
+}
+
+/* :hover наведение */
+.header__logo:hover {
+    opacity: 50%;
+}
+
+/* :active нажатие */
+.header__logo:active {
+    opacity: 10%;
+}

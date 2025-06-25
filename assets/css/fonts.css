@@ -1,0 +1,20 @@
+@font-face {
+    /* Название шрифта */
+    font-family: 'Roboto';
+    /* Указываем путь к файлу */
+    src: url('../fonts/Roboto-Bold.ttf');
+    /* Указываем степень жирности */
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
