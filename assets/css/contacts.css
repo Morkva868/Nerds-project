@@ -1,0 +1,41 @@
+.contacts__link {
+    width: 81px;
+    height: 81px;
+    background-color: #E1E1E1;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.contacts__list {
+    display: flex;
+    gap: 9px;
+}
+
+.contacts {
+    padding-top: 75px;
+    padding-bottom: 74px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    gap: 139px;
+    align-items: center;
+}
+
+.contacts__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: #000;
+    margin-bottom: 10px;
+
+}
+
+.contacts__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: #444;
+}
