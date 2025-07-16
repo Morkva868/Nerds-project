@@ -1,0 +1,107 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.isActive {
+    display: flex;
+}
+
+.modal__content {
+    background-color: #fff;
+    width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* покой */
+.modal__input {
+    /* отключает подсветку */
+    outline: none;
+    height: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    color: #444;
+    border: 2px solid #D7DCDE;
+    transition: 300ms;
+    padding-left: 19px;
+}
+
+/* наведение */
+.modal__input:hover {
+    color: #B4B9BB;
+    border: 2px solid #B4B9BB;
+}
+
+/* фокус */
+.modal__input:focus {
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+/* невалидное значение */
+.modal__input:user-invalid {
+    color: #E74246;
+    border: 2px solid #E74246;
+}
+
+.modal__submit {
+      font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+    background-color: #fb565a;
+    text-decoration: none;
+    padding: 16px 54px;
+    display: inline-block;
+    border-radius: 3px;
+    transition: 300ms;
+    border: none;
+    text-transform: uppercase;
+}
+
+.modal__submit:hover{
+background-color: #E74246;
+}
+
+.modal__submit:active{
+    background-color: #D7373B;
+    color:#ffffff30;
+     box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.modal__close{
+    opacity: 0.3;
+    transition: 300ms;
+}
+
+.modal__close:hover{
+    opacity: 1;
+}
+
+.modal__close:active{
+    opacity: 0.1;
+}

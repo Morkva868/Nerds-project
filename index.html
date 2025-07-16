@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Главная страница</title>
 </head>
 
 <!-- BEM -->
@@ -180,36 +180,53 @@
 
         </div>
         <div class="contacts">
-           <div class="container">
-            <div class="contacts__wrapper">
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/vk-icon.svg" alt="vk" class="contacts__icon">
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/fb-icon.svg" alt="facebook" class="contacts__icon">
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/insta-icon.svg" alt="instagram" class="contacts__icon">
-                        </a>
-                    </li>
-                </ul>
-                <div class="contacts__info">
-                    <h2 class="contacts__title">Давайте дружить, это выгодно!</h2>
-                    <p class="contacts__text">Скидка 10% для друзей из социальных сетей.</p>
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/vk-icon.svg" alt="vk" class="contacts__icon">
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/fb-icon.svg" alt="facebook" class="contacts__icon">
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/insta-icon.svg" alt="instagram" class="contacts__icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contacts__info">
+                        <h2 class="contacts__title">Давайте дружить, это выгодно!</h2>
+                        <p class="contacts__text">Скидка 10% для друзей из социальных сетей.</p>
+                    </div>
                 </div>
             </div>
-           </div> 
         </div>
     </footer>
 
 
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">
+                    Напишите нам
+                </h2>
+                <a href="#" class="modal__close">❌</a>
+            </div>
+            <form action="" class="modal__form">
+                <input type="text" name="username" class="modal__input" required placeholder="Имя и фамилия">
+                <input type="tel" name="phone"  class="modal__input" required placeholder="Телефон">
+                <input type="email" name="email"  class="modal__input" required placeholder="Почта">
+                <input type="submit" value="Отправить" class="modal__submit">
+            </form>
+        </div>
+    </div>
 
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
