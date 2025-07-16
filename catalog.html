@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Магазин</title>
+</head>
+
+<!-- BEM -->
+<!-- B - Block header
+ E - Element header__wrapper header__logo
+ M - Mod header__logo header__logo--big   -->
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/nerds-logo.svg" alt="логотип nerds" class="header__logo-img">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Студия
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Клиенты
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__cart header__link">
+                    Корзина
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+    <section class="page-title">
+        <div class="container">
+            <h1 class="page-title__title">Магазин готовых шаблонов</h1>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2ad41c6db74af100f67c182cea108051eaecfdc63d83785924b69fdd37db560&amp;source=constructor"
+                width="100%" height="416" frameborder="0"></iframe>
+
+            <div class="container">
+                <div class="map__group">
+                    <div class="map__info">
+                        <h3 class="map__title">NЁRDS DESIGN STUDIO</h3>
+                        <address class="map__address">
+                            191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8
+                        </address>
+                        <p class="map__phone">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+                        <a href="#" class="map__btn">Напишите нам</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/vk-icon.svg" alt="vk" class="contacts__icon">
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/fb-icon.svg" alt="facebook" class="contacts__icon">
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="#" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/insta-icon.svg" alt="instagram" class="contacts__icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contacts__info">
+                        <h2 class="contacts__title">Давайте дружить, это выгодно!</h2>
+                        <p class="contacts__text">Скидка 10% для друзей из социальных сетей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">
+                    Напишите нам
+                </h2>
+                <a href="#" class="modal__close">❌</a>
+            </div>
+            <form action="" class="modal__form">
+                <input type="text" name="username" class="modal__input" required placeholder="Имя и фамилия">
+                <input type="tel" name="phone"  class="modal__input" required placeholder="Телефон">
+                <input type="email" name="email"  class="modal__input" required placeholder="Почта">
+                <input type="submit" value="Отправить" class="modal__submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
