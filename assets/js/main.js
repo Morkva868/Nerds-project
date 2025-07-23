@@ -24,3 +24,4 @@ exit.addEventListener("click", (event)=>{
     event.preventDefault();
     modal.classList.remove("isActive")
 })
+

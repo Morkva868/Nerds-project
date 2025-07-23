@@ -51,11 +51,41 @@
         </div>
     </header>
     <main class="main">
-    <section class="page-title">
-        <div class="container">
-            <h1 class="page-title__title">Магазин готовых шаблонов</h1>
-        </div>
-    </section>
+        <section class="page-title">
+            <div class="container">
+                <h1 class="page-title__title">Магазин готовых шаблонов</h1>
+            </div>
+        </section>
+        <section class="filters">
+            <div class="filters__wrapper">
+                <form class="filters__form">
+                    <div class="filters__block">
+                        <h3 class="filters__title">сетка:</h3>
+                        <ul class="filters__list">
+                            <li class="filters__item">
+                                <label class="filters__field">
+                                    <input type="radio" class="filters__radio" name="grid" value="Адаптивная">
+                                    <span class="filters__sign">Адаптивная</span>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label class="filters__field">
+                                    <input type="radio" class="filters__radio" name="grid" value="Фиксированная">
+                                    <span class="filters__sign">Фиксированная</span>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label class="filters__field">
+                                    <input type="radio" class="filters__radio" name="grid" value="Резиновая">
+                                    <span class="filters__sign">Резиновая</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="map">
@@ -117,8 +147,8 @@
             </div>
             <form action="" class="modal__form">
                 <input type="text" name="username" class="modal__input" required placeholder="Имя и фамилия">
-                <input type="tel" name="phone"  class="modal__input" required placeholder="Телефон">
-                <input type="email" name="email"  class="modal__input" required placeholder="Почта">
+                <input type="tel" name="phone" class="modal__input" required placeholder="Телефон">
+                <input type="email" name="email" class="modal__input" required placeholder="Почта">
                 <input type="submit" value="Отправить" class="modal__submit">
             </form>
         </div>
