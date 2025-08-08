@@ -1,0 +1,6 @@
+.shop-content__wrapper{
+display: grid;
+grid-template-columns: 260px 1fr;
+grid-column-gap: 140px;
+padding-top: 55px;
+}

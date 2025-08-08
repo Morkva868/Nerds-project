@@ -56,36 +56,171 @@
                 <h1 class="page-title__title">Магазин готовых шаблонов</h1>
             </div>
         </section>
-        <section class="filters">
-            <div class="filters__wrapper">
-                <form class="filters__form">
-                    <div class="filters__block">
-                        <h3 class="filters__title">сетка:</h3>
-                        <ul class="filters__list">
-                            <li class="filters__item">
-                                <label class="filters__field">
-                                    <input type="radio" class="filters__radio" name="grid" value="Адаптивная">
-                                    <span class="filters__sign">Адаптивная</span>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label class="filters__field">
-                                    <input type="radio" class="filters__radio" name="grid" value="Фиксированная">
-                                    <span class="filters__sign">Фиксированная</span>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label class="filters__field">
-                                    <input type="radio" class="filters__radio" name="grid" value="Резиновая">
-                                    <span class="filters__sign">Резиновая</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </form>
+        <div class="shop-content">
+            <div class="container">
+                <div class="shop-content__wrapper">
+                    <section class="filters">
+                        <div class="filters__wrapper">
+                            <form class="filters__form">
+                                <div class="filters__block">
+                                    <h3 class="filters__title">Стоимость:</h3>
+                                    <div class="filters__slider-wrapper">
 
+                                        <div class="filters__slider-container">
+                                            <div class="filters__slider-track"></div>
+                                            <input type="range" min="0" max="30000" value="0" id="slider-1"
+                                                oninput="slideOne()">
+                                            <input type="range" min="0" max="30000" value="15000" id="slider-2"
+                                                oninput="slideTwo()">
+                                        </div>
+                                    </div>
+                                    <div class="filters__price">
+                                        <label class="filters__price-label">
+                                            <span class="filters__price-sign">от</span>
+                                            <input type="number" class="filters__price-value" id="from" placeholder="0"
+                                                min="0" max="30000">
+                                        </label>
+                                        <label class="filters__price-label">
+                                            <span class="filters__price-sign">до</span>
+                                            <input type="number" class="filters__price-value" id="to"
+                                                placeholder="15000" min="0" max="30000">
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="filters__block filters__block--grid">
+                                    <h3 class="filters__title">сетка:</h3>
+                                    <ul class="filters__list">
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="radio" class="filters__radio" name="grid"
+                                                    value="Адаптивная" disabled>
+                                                <span class="filters__sign">Адаптивная</span>
+                                            </label>
+                                        </li>
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="radio" class="filters__radio" name="grid"
+                                                    value="Фиксированная" checked>
+                                                <span class="filters__sign">Фиксированная</span>
+                                            </label>
+                                        </li>
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="radio" class="filters__radio" name="grid"
+                                                    value="Резиновая">
+                                                <span class="filters__sign">Резиновая</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="filters__block filters__block--components">
+                                    <h3 class="filters__title">Особенности:</h3>
+                                    <ul class="filters__list">
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="checkbox" class="filters__checkbox" name="components"
+                                                    value="Слайдер" disabled checked>
+                                                <span class="filters__sign">Слайдер</span>
+                                            </label>
+                                        </li>
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="checkbox" class="filters__checkbox" name="components"
+                                                    value="Блок преимуществ">
+                                                <span class="filters__sign">Блок преимуществ</span>
+                                            </label>
+                                        </li>
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="checkbox" class="filters__checkbox" name="components"
+                                                    value="Новости">
+                                                <span class="filters__sign">Новости</span>
+                                            </label>
+                                        </li>
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="checkbox" class="filters__checkbox" name="components"
+                                                    value="Галерея">
+                                                <span class="filters__sign">Галерея</span>
+                                            </label>
+                                        </li>
+                                        <li class="filters__item">
+                                            <label class="filters__field">
+                                                <input type="checkbox" class="filters__checkbox" name="components"
+                                                    value="Корзина">
+                                                <span class="filters__sign">Корзина</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="filters__btn">ПОКАЗАТЬ</a>
+                            </form>
+
+                        </div>
+                    </section>
+                    <section class="catalog">
+                        <div class="catalog__sort sort">
+                            <h3 class="sort__title">Сортировать:</h3>
+                            <ul class="sort__list">
+                                <li class="sort__item sort__item--current">По цене</li>
+                                <li class="sort__item">По типу</li>
+                                <li class="sort__item">По названию</li>
+                            </ul>
+                            <ul class="sort__orders">
+                                <li class="sort__order sort__order--current"><svg width="11" height="10"
+                                        viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 10L0 0H11" fill="#231F20" />
+                                    </svg>
+                                </li>
+                                <li class="sort__order">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="black" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog__cards cards">
+                            <ul class="cards__list">
+                                <li class="cards__item">
+                                    <img src="assets/images/sedona.png" alt="sedona" class="cards__picture">
+                                    <div class="cards__info">
+                                        <a href="#" class="cards__link">Sedona</a>
+                                        <p class="cards__description">Информационный сайт для туристов</p>
+                                        <a href="#" class="cards__btn"><span>9 900</span> ₽</a>
+                                    </div>
+                                </li>
+                                <li class="cards__item">
+                                    <img src="assets/images/catalog-pink.png" alt="pink" class="cards__picture">
+                                    <div class="cards__info">
+                                        <a href="#" class="cards__link">Pink</a>
+                                        <p class="cards__description">Информационный сайт для туристов</p>
+                                        <a href="#" class="cards__btn"><span>10 000</span> ₽</a>
+                                    </div>
+                                </li>
+                                <li class="cards__item">
+                                    <img src="assets/images/catalog-borodinski.png" alt="borodinski" class="cards__picture">
+                                    <div class="cards__info">
+                                        <a href="#" class="cards__link">Borodinski</a>
+                                        <p class="cards__description">Барбершоп</p>
+                                        <a href="#" class="cards__btn"><span>8 520</span> ₽</a>
+                                    </div>
+                                </li>
+                                <li class="cards__item">
+                                    <img src="assets/images/catalog-mishka.png" alt="mishka" class="cards__picture">
+                                    <div class="cards__info">
+                                        <a href="#" class="cards__link">Sedona</a>
+                                        <p class="cards__description">Милые штуки ручной работы для дома </p>
+                                        <a href="#" class="cards__btn"><span>6 148</span> ₽</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="map">
@@ -154,7 +289,7 @@
         </div>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/catalog.js"></script>
 </body>
 
 </html>

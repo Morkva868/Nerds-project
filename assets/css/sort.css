@@ -1,0 +1,66 @@
+.sort__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.sort{
+    display: flex;
+    align-items: center;
+}
+
+.sort__list{
+    display: flex;
+    margin-left: auto;
+    gap: 25px;
+}
+
+.sort__orders{
+    display: flex;
+    margin-left: 47px;
+    gap: 18px;
+}
+
+.sort__item {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #00000030;
+    transition: 400ms;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.sort__item:hover {
+    color: #00000060;
+}
+
+.sort__item:active {
+    color: #000;
+}
+
+.sort__item--current {
+    color: #000;
+}
+
+.sort__order {
+    opacity: 0.2;
+    transition: 400ms;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.sort__order:hover {
+    opacity: 0.4;
+}
+
+.sort__order:active {
+    opacity: 1;
+}
+
+.sort__order--current {
+    opacity: 1;
+}
